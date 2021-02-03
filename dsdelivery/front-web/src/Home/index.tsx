@@ -2,6 +2,7 @@ import React from 'react';
 import './styles.css';
 import {ReactComponent as MainImage } from './main.svg';
 import Footer from '../Footer';
+import { Link } from 'react-router-dom';
 
 function Home (){
     return(
@@ -16,9 +17,9 @@ function Home (){
                             Choose your order and in a few minutes <br/>
                             we take to you
                         </h3>
-                        <a href="orders" className="home-btn-order">
+                        <Link to="orders" className="home-btn-order">
                             MAKE ORDER
-                        </a>
+                        </Link>
                     </div>
                     <div className="home-image">
                         <MainImage/>
